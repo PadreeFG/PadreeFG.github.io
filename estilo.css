@@ -1,0 +1,221 @@
+html, body {
+    margin: 0px;
+    background-color: rgb(51, 51, 51);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+section {
+    padding-top: 20px;
+    overflow: hidden;
+    float: left;
+}
+/* --------  Header  -------- */
+header {
+    background-color: rgb(2, 49, 13);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.logo {
+    width: 100px;
+    float: left;
+    position: absolute;
+    top: 5px;
+    margin-left: 5%;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+    font-weight: bold;
+}
+li:hover {
+    background-color: rgba(0, 255, 60, 0.486);
+    transition: 0.6s ease
+
+}
+li a {
+    color: initial;
+    text-decoration: initial;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.menu {
+    float: right;
+    margin-right: 5%;
+    list-style-type: none;
+    margin-top: 0px;
+}
+/* --------  Capa  -------- */
+.imagem_fundo {
+    background: url(img/fundo.jpg);
+    height: 100%;  
+    text-align: center;
+    background-size: cover;
+}
+.titulo {
+    color: white; 
+    padding-top: 30%; 
+    font-size: 70px;
+    line-height: 0.6;
+}
+.subtitulo {
+    color: white;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-shadow: 1px 1px  black;
+    border-top: 3px solid white;
+}
+.acao {
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.acao:hover {
+    background-color: rgba(15, 236, 85, 0.37);
+    border: 2px solid rgba(15, 236, 85, 0.37);
+    transition: 0.6s ease
+}
+/* --------  Colunas  -------- */
+.icones {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+.icones:hover {
+    background: white;
+    transition: 0.6s ease
+}
+
+.doar {
+    width: 100%;
+    border-bottom: 100px;
+
+}
+.botaod {
+    width: 300px;
+}
+.video {
+    padding-top: 100px;
+}
+.destaque2 {
+    background-color: rgb(219, 255, 230);
+}
+.destaque {
+    background-color: rgb(210, 245, 221);
+}
+.destaque3 {
+    background-image: url(img/fundosection1-3.jpg);
+    background-size: cover;
+}
+.destaque4 {
+    background-color: #15790d;
+}
+.destaque5 {
+    background-color: #003e13;
+}
+.preservacao {
+    width: 90%;
+    border: 5px solid white;
+}
+.sobre {
+    width: 100%;
+    margin-top: 80px;
+    border: 5px solid white
+}
+.coluna {
+     float: left;
+     padding: 0 5%;
+     position: relative;
+}
+.dois {
+    width: 40%;
+} 
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.quatro {
+    width: 15%;
+}
+/* --------  Textos  -------- */
+.justificar {
+    text-align: justify;
+}
+.centro {
+    text-align: center;
+}
+h3 {
+    font-weight: bold;
+    font: bolder;
+    line-height: -1.6; 
+    font-size: 30px; 
+}
+.left {
+    text-align: left;
+}
+hr {
+    color: black;
+}
+.text {
+    margin-top: 190px;
+    color: white;
+}
+.sub {
+    font-weight: bold;
+}
+/* --------  Footer  -------- */
+footer {
+    color: white;
+    width: 100%;
+    height: 220px;
+    background-color: rgb(51, 51, 51);
+    float: left;
+}
+/* --------  Responsividade  --------*/
+@media all and (max-width: 760px) {
+  .menu {
+      visibility: hidden;
+  }
+  .coluna, .dois, .tres, .quatro {
+      display: block;
+      width: 80%;
+      padding: 0;
+      margin: 10px auto;
+      float: none;
+
+  }
+  .logocentro {
+      width: 100%;
+      position: relative;
+      text-align: center;
+  }
+  .logo {
+      margin-left: 0px;
+      transform: translateX(-50%);
+  }
+  .titulo {
+      font-size: 55px;
+  }
+  .subtitulo {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .destaque3 {
+      background-image: url(img/fundosection1-5.jpg);
+  }
+  .text {
+      margin-top: 100px;
+  }
+  .sobre {
+    margin-top: 20px;
+  }
+}
