@@ -218,4 +218,7 @@ footer {
   .sobre {
     margin-top: 20px;
   }
+  footer {
+    height: 320px;
+  }
 }
